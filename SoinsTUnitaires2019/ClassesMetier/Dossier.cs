@@ -197,5 +197,15 @@ namespace ClassesMetier
 
             return s;
         }
+
+        /// <summary>
+        /// Retourne la derniere prestation de la liste
+        /// </summary>
+        /// <returns></returns>
+        public Prestation DernierePrestation()
+        {
+            int i = this.MesPrestations.Count();
+            return this.MesPrestations[i];
+        }
     }
 }
